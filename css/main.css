@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bs-body-bg: #f5eee6 !important;
+    --bg-table-color: #fff;
+    /* --bs-table-bg: var(--bg-table-color) !important; */
+    --bs-btn-bg: #8e7ab5 !important;
+    --bs-btn-border-color: #8E7AB5;
+    --bs-btn-hover-bg: #7c65a9;
+}
+::selection{
+    background-color: #E6A4B4;
+    color: #5f14f5;
+}
+body .main-color {
+    background-color: var(--bs-body-bg);
+}
+
+input {
+    background-color: white !important;
+}
+
+h1 {
+    font-family: "Playwrite IT Moderna", cursive;
+    position: relative;
+    display: inline-block;
+}
+
+h1::before {
+    content: '';
+    background-color: #E6A4B4;
+    position: absolute;
+    width: 84%;
+    height: 10%;
+    bottom: 28px;
+    z-index: -1;
+}
+
+h1:hover::before {
+    height: 30%;
+    transition: all 1s ease-in-out;
+}
+
+.bookmark h3 {
+    /* color: #E6A4B4; */
+    /* background:  rgb(142,122,181); */
+
+    background-image: linear-gradient(90deg, rgba(142, 122, 181, 1) 18%, rgba(183, 132, 183, 1) 47%, rgba(228, 147, 179, 1) 98%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: fit-content;
+}
+
+.botn button {
+ background-color: #8E7AB5;
+ color: white;
+}
+.botn button:hover{
+    background-color: #7c65a9;
+    color: white;
+}
+
+.bookmark {
+    position: relative;
+}
+
+.bookmark::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: black dotted 2px;
+    top: 10px;
+    right: 0;
+}
+
+.bookmark::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: black dotted 2px;
+    bottom: 10px;
+    right: 0;
+}
+
+#bookmarkName:focus , #bookmarkUrl:focus{
+    border-color: #7c65a9;
+    /* box-shadow: 0px 1px 1px rgba(142, 122, 181 ,0.75 ) ; */
+    /* box-shadow:  0rem 0px rgba(142, 122, 181 ,0.5 ); */
+    box-shadow: 0px 1px 1px rgba(124, 101, 169 ,0.5) , 0px 0px 8px rgba(255, 100, 255, 0.5);
+}

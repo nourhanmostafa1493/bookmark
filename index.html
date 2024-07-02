@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bookmarks</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/all.min.css'>
+
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/bootstrap.min.css'>
+
+</head>
+
+<body class="main-color ">
+    <div class="container">
+        <div class="title text-center">
+            <h1 class="text-center m-5 p-4 fw-bold ">Bookmarker</h1>
+        </div>
+
+        <div class="bookmark  p-5 ">
+            <h3 class="m-auto mb-5"><i class="fa-solid fa-bookmark"></i> Bookmark Your Favorite Site <i
+                    class="fa-solid fa-bookmark"></i></h3>
+
+            <label class="fw-bold" for="bookmarkName"><i class="fa-solid fa-floppy-disk pe-2"></i>Site Name</label>
+            <input class="form-control mb-2" type="text" placeholder="Bookmark Name" aria-label="default input example"
+                id="bookmarkName">
+
+
+            <label class="fw-bold" for="bookmarkUrl"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+            <input class="form-control mb-3" type="text" placeholder="Site URL" aria-label="default input example"
+                id="bookmarkUrl">
+
+            <div class="d-flex justify-content-center botn">
+                <button onclick="addUrl()" class="btn rounded-2 px-5 my-2 btn-violet "> Submit </button>
+            </div>
+        </div>
+
+        <div class="bookmarks_list">
+
+            <table class="table table-color">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website Name</th>
+                        <th scope="col">Visit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="bookmarks_list">
+                 
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src='./js/bootstrap.bundle.js'></script>
+    <script src='./js/main.js'></script>
+</body>
+
+</html>
